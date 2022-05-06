@@ -5,7 +5,7 @@ export default function Book({ book }) {
     <div className='book'>
       <h3>{book.title}</h3>
       <p><b>Genre:</b> {book.genre}</p>
-      <p><b>Chapterbook:</b> {book.is_chapterbook}</p>
+      <p><b>Chapterbook:</b> {book.is_chapterbook ? 'true' : 'false'}</p>
       <p><b>Copies sold:</b> {book.copies_sold}</p>
     </div>
   );

@@ -78,3 +78,18 @@
 .plant img {
   width: 200px;
 }
+
+.planet-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.planet {
+  border: solid black 1px;
+  width: 300px;
+}
+
+.planet img {
+  width: 200px;
+}
