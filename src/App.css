@@ -62,3 +62,19 @@
   border: solid red 1px;
   width: 300px;
 }
+
+
+.plant-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.plant {
+  border: solid black 1px;
+  width: 300px;
+}
+
+.plant img {
+  width: 200px;
+}

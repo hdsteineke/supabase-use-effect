@@ -1,20 +1,25 @@
 import { useEffect, useState } from 'react';
 import { fetchAllBirds } from './services/fetch-utils';
 import { fetchAllBooks } from './services/fetch-utils';
+import { fetchAllPlants } from './services/fetch-utils';
 import BirdList from './BirdList';
 import BookList from './BookList';
+import PlantList from './PlantList';
 import './App.css';
 
 function App() {
   const [birds, setBirds] = useState([]);
   const [books, setBooks] = useState([]);
+  const [plants, setPlants] = useState([]);
   
   useEffect(async () => {
     const birdResponse = await fetchAllBirds();
     const bookResponse = await fetchAllBooks();
+    const plantResponse = await fetchAllPlants();
 
     setBirds(birdResponse);
     setBooks(bookResponse);
+    setPlants(plantResponse);
   }, []);
 
 
@@ -26,6 +31,9 @@ function App() {
         />
         <BookList
           books={books}
+        />
+        <PlantList
+          plants={plants}
         />
       </div>
     </div>
