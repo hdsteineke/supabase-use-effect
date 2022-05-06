@@ -6,8 +6,9 @@ export default function Bird({ bird }) {
   
       <h3>{bird.species}</h3>
       <img src={bird.image}/>
-      <p>`<b>Color:</b> {bird.color}</p>
-      <p><b>Habitat:</b> {bird.habitat}</p>
+      <p><b>Color:</b> {bird.color}</p>
+      <p><b>Habitat:</b> {bird.habitat.map((location) => ( 
+        <p key={location}>{location}</p>))}</p>
       <p><b>Wingspan(in.):</b> {bird.wingspan}</p>
     </div>
   );
