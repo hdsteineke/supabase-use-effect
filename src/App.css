@@ -40,6 +40,7 @@
 .bird-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 10px;
 }
 
 .bird {
@@ -49,4 +50,15 @@
 
 .bird img {
   width: 200px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.book {
+  border: solid red 1px;
+  width: 300px;
 }
