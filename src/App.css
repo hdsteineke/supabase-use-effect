@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+.bird-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.bird {
+  border: solid black 1px;
+  width: 300px;
+}
+
+.bird img {
+  width: 200px;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.book {
+  border: solid red 1px;
+  width: 300px;
+}
+
+
+.plant-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.plant {
+  border: solid black 1px;
+  width: 300px;
+}
+
+.plant img {
+  width: 200px;
+}
+
+.planet-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.planet {
+  border: solid black 1px;
+  width: 300px;
+}
+
+.planet img {
+  width: 200px;
+}
