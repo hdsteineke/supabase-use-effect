@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.bird-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bird {
+  border: solid black 1px;
+  width: 300px;
+}
