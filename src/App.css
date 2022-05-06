@@ -46,3 +46,7 @@
   border: solid black 1px;
   width: 300px;
 }
+
+.bird img {
+  width: 200px;
+}

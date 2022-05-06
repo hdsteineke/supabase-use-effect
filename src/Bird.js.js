@@ -5,6 +5,7 @@ export default function Bird({ bird }) {
     <div className="bird">
   
       <h3>{bird.species}</h3>
+      <img src={bird.image}/>
       <p>`<b>Color:</b> {bird.color}</p>
       <p><b>Habitat:</b> {bird.habitat}</p>
       <p><b>Wingspan(in.):</b> {bird.wingspan}</p>
