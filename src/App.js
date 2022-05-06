@@ -14,6 +14,7 @@ function App() {
   const [books, setBooks] = useState([]);
   const [plants, setPlants] = useState([]);
   const [planets, setPlanets] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   
   useEffect(async () => {
     const birdResponse = await fetchAllBirds();
@@ -25,26 +26,31 @@ function App() {
     setBooks(bookResponse);
     setPlants(plantResponse);
     setPlanets(planetResponse);
+    setIsLoading(false);
   }, []);
 
 
   return (
+
     <div className="App">
-      <div>
-        <h1>Lists of Things</h1>
-        <BirdList 
-          birds={birds}
-        />
-        <BookList
-          books={books}
-        />
-        <PlantList
-          plants={plants}
-        />
-        <PlanetList
-          planets={planets}
-        />
-      </div>
+      { 
+        isLoading ? <h1>Loading...</h1> : 
+          <div>
+            <h1>Lists of Things</h1>
+            <BirdList 
+              birds={birds}
+            />
+            <BookList
+              books={books}
+            />
+            <PlantList
+              plants={plants}
+            />
+            <PlanetList
+              planets={planets}
+            />
+          </div>
+      }
     </div>
   );
 }
