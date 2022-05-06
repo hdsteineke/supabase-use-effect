@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   const [birds, setBirds] = useState([]);
-
+  
   useEffect(async () => {
     const birdResponse = await fetchAllBirds();
 
